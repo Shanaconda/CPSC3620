@@ -1,2 +1,2 @@
-Data Structures & Algorithm
-Implementing stacks, queues, vectors, Binary trees 
+Data Structures & Algorithms class
+Learned about fundamental ADT's (Stacks, queues, min and max heaps, BST's, etc) in C++
