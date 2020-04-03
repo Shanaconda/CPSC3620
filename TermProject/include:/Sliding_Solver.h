@@ -30,6 +30,11 @@ class Sliding_Solver {
     void output();
     //Outputs the goal configurations
     void printBoard(const string board);
+    //Virtual deconstructor to prevent memory leakage
+    virtual ~Sliding_Solver() {
+        delete obj;
+        delete Goal;
+    }
     
     private:
     //Start board from user input
