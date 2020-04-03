@@ -1,4 +1,4 @@
-*******8 puzzle program using A*search******
+*******8 puzzle program using A* search ******
 
 
 User Manuel:\
