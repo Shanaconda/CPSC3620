@@ -50,11 +50,10 @@ class Board_Tile {
 public:
     //Default constructor for inheritances
     Board_Tile() {}
-    //Board_Title constructor
+    //Board_Tile constructor
     //Stores values into a 2d array
     Board_Tile(const string& s, Board_Tile* b);
-    //Board_title constructor
-    //Sets the configuration
+    //Board_tile copy constructor
     Board_Tile(const Board_Tile & bt);
     //Bool operators to compare the current manhanttan distance + moves from start
     //Of an object to current
