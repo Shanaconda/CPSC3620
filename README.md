@@ -1,2 +1,2 @@
 Data Structures & Algorithm
-Implementing stacks, queues, vectors and Binary trees 
+Implementing stacks, queues, vectors, Binary trees 
