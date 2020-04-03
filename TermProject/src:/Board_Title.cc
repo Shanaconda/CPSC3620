@@ -9,7 +9,6 @@
 #include <stdio.h>
 #include <iostream>
 #include <string>
-#include <stdlib.h>
 #include<list>
 #include <vector>
 #include<queue>
@@ -123,8 +122,10 @@ string Board_Tile::discernMoves() {
 //********************************************************************
 void Board_Tile::swap(char const c, int r, int _c, Board_Tile *goal) {
     
-        string temp;//temporary for swapping
+        //For swapping
+        string temp;
     
+        //If the move is U
         if (c == 'U') {
             temp = config[r-1][_c];
             config[r-1][_c] = config[r][_c];
@@ -143,7 +144,8 @@ void Board_Tile::swap(char const c, int r, int _c, Board_Tile *goal) {
 
             coordinates[0].swap(coordinates[atoi(temp.c_str())]);
         }
-
+        
+        //If the the move is right
         if (c == 'R') {
             temp = config[r][_c + 1];
             config[r][_c + 1] = config[r][_c];
@@ -162,6 +164,7 @@ void Board_Tile::swap(char const c, int r, int _c, Board_Tile *goal) {
 
             coordinates[0].swap(coordinates[atoi(temp.c_str())]);
         }
+        //If the the move is down
         if (c == 'D') {
             temp = config[r + 1][_c];
             config[r + 1][_c] = config[r][_c];
@@ -180,6 +183,7 @@ void Board_Tile::swap(char const c, int r, int _c, Board_Tile *goal) {
 
             coordinates[0].swap(coordinates[atoi(temp.c_str())]);
         }
+        //If the the move is left
         if (c == 'L') {
             temp = config[r][_c - 1];
             config[r][_c - 1] = config[r][_c];
